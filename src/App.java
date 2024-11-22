@@ -5,7 +5,7 @@ public class App {
         Scanner inp = new Scanner(System.in);
         System.out.println("Would you like to run (enter int):\n"+
                             "1. Varrr\n"+
-                            "2. \n"+
+                            "2. Fact\n"+
                             "3. \n"+
                             "4. \n"+
                             "5. \n");
@@ -17,7 +17,8 @@ public class App {
                 Var.core();
                 break;
             case 2:
-                
+                Fact F = new Fact(Integer.parseInt(args[0]));
+                F.core();
                 break;
             case 3:
                 
