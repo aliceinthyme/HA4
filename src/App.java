@@ -6,7 +6,7 @@ public class App {
         System.out.println("Would you like to run (enter int):\n"+
                             "1. Varrr\n"+
                             "2. Fact\n"+
-                            "3. \n"+
+                            "3. Primes\n"+
                             "4. \n"+
                             "5. \n");
         int choice = inp.nextInt();
@@ -21,13 +21,16 @@ public class App {
                 F.core();
                 break;
             case 3:
-                
+                Primes Prime = new Primes(Integer.parseInt(args[0]));
+                Prime.core();
                 break;
             case 4:
-                
+                Perfection Perf = new Perfection();
+                Perf.core();
                 break;
             case 5:
-                
+                Triangle Tri = new Triangle();
+                Tri.core();
                 break;
             default:
                 break;
